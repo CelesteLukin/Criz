@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    background-color: rgb(91, 91, 128);
+}
+
+header {
+    background-color: #45415e;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#portada {
+    background-image: url(img/criz1.png);
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#titulo, #introduccion {
+    margin: 0px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center ;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.text1 {
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: justify;
+    margin: 0px 10px;
+}
+
+.contenedor1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.img {
+    width: 400px;
+}
+
+.tarjeta {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+}
+
+.tarjeta:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#seccion1 {
+    margin: 20px 0px;
+}
+
+.titulo-seccion {
+    margin-bottom: 20px;
+    color: white;
+}
+
+#ph {
+    margin: 0px;
+    color: white;
+    margin-right: 10px;
+}
+
+#imgh {
+    width: 30px;
+    border-radius: 100%;
+    border: 2px solid white;
+    margin-right: 5px;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
