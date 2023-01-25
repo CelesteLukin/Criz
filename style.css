@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #06325e;
+    background-color: #01203f;
 }
 
 header {
@@ -25,6 +25,11 @@ header {
 .textheader {
     color: white;
     font-weight: 400;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .textheader:hover {
@@ -35,7 +40,7 @@ header {
     display: flex;
     align-items: center;
     width: 40%;
-    justify-content: right;
+    justify-content: space-evenly;
 }
 
 .t1 {
@@ -69,22 +74,21 @@ header {
 #titulo, #introduccion {
     margin: 0px;
     line-height: 30px;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
 #introduccion {
     opacity: 0.8;
-    font-weight: bold;
     margin: 10px;
-    text-align: left;
+    font-size: 20px;
 }
 
 #titulo {
     font-size: 50px ;
     font-family: Georgia, 'Times New Roman', Times, serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 20px;
-    flex-basis: 30%;
+    margin-bottom: 5px;
+    padding-top: 80px;
 }
 
 h2 {
@@ -114,10 +118,9 @@ h2 {
     height: 700px;
     align-items: left;
     flex-direction: column;
-    width: 50%;
-    margin-left: 50px;
-    padding: 50px 0px;
-    text-align: left;
+    width: 40%;
+    margin-left: 200px;
+    padding: 90px 0px;
 }
 
 .img {
@@ -125,13 +128,14 @@ h2 {
 }
 
 .tarjeta {
-    margin: 10px ;
+    margin: 60px 0px ;
     border-radius: 10px;
     background-color: black;
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 .tarjeta:hover {
@@ -175,18 +179,23 @@ h2 {
 
 .contenedor3 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: left;
+    width: 95%;
+    margin: 0 auto;
 }
 
 #columna1 {
-    flex-basis: 50%;
+    flex-basis: 70%;
     text-align: justify;
+    margin-right: 100px;
+    margin-top: 40px;
 }
 
 #columna2 {
-    flex-basis: 50%;
+    flex-basis: 30%;
     text-align: justify;
+    margin-top: 40px;
 }
 
 * {
@@ -194,13 +203,17 @@ h2 {
 }
 
 #seccion2 {
-    background-color: white;
-    padding: 20px 0px 40px 0px;
+    background-color: rgb(17, 17, 24);
+    color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .lista {
-    line-height: 40px;
-    margin-left: 10px;
+    line-height: 30px;
+    padding: 0px;
 }
 
 #comentario1 {
@@ -240,6 +253,10 @@ button {
 
 #comentarios {
     padding-top: 20px;
+    background-image: url(img/criz1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
 }
 
 input {
@@ -256,19 +273,105 @@ input {
 
 footer {
     background-color: #050828;
-    padding: 15px 0px;
+    padding: 5px 0px;
+}
+
+#contenedorfooter {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    margin: 0 auto;
 }
 
 .textofooter {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
 }
 
 .textofooter:hover {
     opacity: 0.5;
+    cursor: pointer;
+}
+#cronometro::before {
+    content: url(img/cronometro.png) ;
+    margin-right: 10px;
 }
 
+#first::before {
+    content: url(img/rompecabezas.png);
+    margin-right: 10px;
+}
+
+#help::before {
+    content: url(img/apreton-de-manos.png);
+    margin-right: 10px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#dioses::before {
+    content: url(img/boton-cerrar.png);
+    margin-right: 10px;
+}
+
+#toxico::before {
+    content: url(img/radiactivo.png);
+    margin-right: 10px;
+}
+
+#abandonar::before {
+    content: url(img/salida.png);
+    margin-right: 10px;
+}
+
+#queso::before {
+    content: url(img/queso.png);
+}
+.maxcomentario {
+    width: 400px;
+    text-align: justify;
+    background-color: #4c6589;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    position: relative;
+    height: fit-content;
+}
+
+#comentarioscriz {
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    width: 60%;
+
+}
+
+#titulomini {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+label {
+    font-weight: 600;
+}
+
+button {
+    font-weight: 600;
+    background-color: #c0c4cf;
+    width: 70px;
+}
 /* .textopregunta {
     color: white;
     text-align: center;
